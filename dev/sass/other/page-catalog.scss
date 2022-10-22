@@ -1,0 +1,97 @@
+.page-catalog{
+  margin-bottom: $section-margin;
+    .catalog-title{ 
+        font-family: $font-primary;
+        font-size: 36px;
+        line-height: 60px;
+        font-weight: 400;
+        color: #111;
+        margin: 0 auto 28px;
+        padding: 14px 20px 0;
+    }
+    .product-wrapper{
+      display: grid;
+      grid-template-columns: repeat(4, 245px );
+      column-gap: 80px;
+      row-gap: 92px;
+      margin: 0px 110px;
+    .product{
+      background-color:#F2F2F2;
+      width: 245px;
+      height: 431px;
+      text-align: center;
+      margin-top: 162px;
+      position: relative;
+
+
+        &-img-small{
+            padding: 0px  42px;
+            position: absolute;
+            top: -53px;
+        }
+
+        &-img-big{
+            padding: 0px  42px;
+            position: absolute;
+            top: -80px;
+        }
+      
+     
+      &_title{
+        font-size: 20px;
+        padding: 162px 47px 20px 53px;
+      }
+      &_mass,
+      &_tasty,
+      &_price{
+       font-size: 16px;
+       line-height: 16px;
+       display: flex;
+       justify-content: space-between;
+       border-bottom: 1px solid #CDCDCD;
+       margin: 0 38px;
+       font-family: $font-secondary;
+      }
+       &_mass{
+       padding: 0px 0px 15px;
+       }
+       &_tasty{
+        padding: 15px 0px 15px 0px;
+       }
+       &_price {
+        padding: 15px 0px 42px 0px;
+        border: none;
+       }
+
+       &_buy{
+        padding: 10px 53px;
+        background-color: $primary-color;
+        font-size: 16px;
+        font-family: $font-primary;
+        line-height: 1;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border-radius: 0;
+        border: 1px solid transparent;
+        margin: -6px 0px 0px;
+    
+        &:hover {
+            background: #5EAA2F;
+            text-decoration: none ;
+           
+            border: 1px solid transparent;
+        }
+        &:active{
+           color: #ffffff4d;
+        }
+    
+        &:focus{
+            box-shadow: none;  
+            border-color: transparent;
+        }
+       }
+    }
+  }
+
+}
+  

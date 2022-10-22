@@ -1,0 +1,104 @@
+@@include('templates/head.html')
+<body class="page-form">
+@@include('templates/header.html')
+<main class="wrapper form">
+    <h1 class="page-title">Подбор программы</h1>
+    <div class="page-des">
+    <h4>Заполните анкету, и мы подберем
+        программу питания для вашего кота
+    </h4>
+    </div>
+    <div class="container">
+        <form class="form-program">
+            <div class="form-row">
+                <div class="input-box">
+                    <div class="input-row">
+                        <label for="fname">Имя:*</label>
+                        <input type="text" id="fname" name="fname" placeholder="БАРCИК">
+                    </div>
+                    <div class="input-row">
+                        <label for="lname">Вес(кг):*</label>
+                        <input type="text" id="weight" name="lname" placeholder="7">
+                    </div>
+                    <div class="input-row">
+                        <label for="lname">Возраст(лет):</label>
+                        <input type="text" id="age" name="lname" placeholder="7">
+                    </div>
+
+                </div>
+                <div class="radio-box">
+                    <div>
+                        <input type="radio" id="mass-gain" value="mass-gain" name="mass" checked="checked">
+                        <label for="mass-gain">похудение</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="weight-loss" value="weight-loss" name="mass">
+                        <label for="weight-loss">Набор массы</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="other" value="contact" name="mass">
+                        <label for="other">Не знаю (Нужен ваш совет)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <h2 class="form-row-title"> <span>Контактные данные (владельца кота)</span></h2>
+                <div class="input-row">
+                    <div class="data">
+                        <div class="email">
+                            <label for="mail">E-mail:*</label>
+                            <input type="mail" id="mail" name="mail" placeholder="kuklachev@gmail.com">
+                        </div>
+                        <div class="call">
+                            <label for="phone">Телефон:*</label>
+                            <input type="text" id="phone" name="phone" placeholder="+380 (960) 900-60-90">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <h2 class="form-row-title"><span>Комментарий</span> </h2>
+                <div class="input-row">
+                    <textarea cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+                </div>
+                <div class="form-row">
+                    <h2 class="form-row-title"><span>Дополнительно</span></h2>
+                    <div class="check-row">
+                        <div class="check-item">
+                            <input id="checkbox1" type="checkbox" name="suger" checked="checked">
+                            <label for="checkbox1">
+                                сахарозаменитель
+                            </label>
+                        </div>
+                        <div class="check-item">
+                            <input id="checkbox2" type="checkbox" name="water">
+                            <label for="checkbox2">
+                                питьевая вода
+                            </label>
+                        </div>
+                        <div class="check-item">
+                            <input id="checkbox3" type="checkbox" name="milk">
+                            <label for="checkbox3">
+                                Молоко
+                            </label>
+                        </div>
+                        <div class="check-item">
+                            <input id="checkbox4" type="checkbox" name="vitamins">
+                            <label for="checkbox4">
+                                витамины
+                            </label>
+                        </div>
+                    </div>
+                    <div class="input-item">
+                        <input class="btn btn-primary" type="submit" value="отправить заявку">
+                        <div class="add">
+                            <span>* — Обязательные поля</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    @@include('templates/map.html')
+</main>
+@@include('templates/footer.html')

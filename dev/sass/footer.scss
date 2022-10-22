@@ -1,0 +1,35 @@
+footer{
+  padding: 60px;
+  background-color: $secondary-color;
+  margin-top: auto;
+  align-items: center;
+  height: 149px;
+    .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     
+
+      li::before{
+        display: none;
+      }
+     &-social-networks {
+       padding-left: 24px;
+     } 
+     ul.footer-social-icons {
+      display: flex;
+      margin-top: 14px;
+      align-items: center;
+  }
+  }
+       div {
+        font-size: 16px;
+        line-height: 18px;
+        align-items: center;
+        display: flex;
+      
+       } 
+       
+       
+     }
+ 
